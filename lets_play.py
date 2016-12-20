@@ -7,7 +7,7 @@ if len(original) > 0 and original.isalpha():
     print next_step
 else:
     print "Come again?"
-if raw_input = "y" or "Yes"
+if len(next_step) > 0 and next_step == "y" or "Yes":
     print "Very good! Let's play!"
 else:
-    print "Get out, then!"
+	print "Get out, then!"
