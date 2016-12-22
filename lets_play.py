@@ -2,12 +2,14 @@ first = "Hello, "
 second = "what is your name?"
 
 original = raw_input(first + second)
-if len(original) > 0 and original.isalpha():
-    next_step = raw_input("Hello, " +   original + ". Would you like to play a game?") 
+next_step = raw_input("Hello, " +   original + ". Would you like to play a game?") 
+
+if original.isalpha() and len(original) > 0:
     print next_step
 else:
     print "Come again?"
-if len(next_step) > 0 and next_step == "y" or "Yes":
+    
+if  next_step == "y" or "Yes":
     print "Very good! Let's play!"
 else:
 	print "Get out, then!"
